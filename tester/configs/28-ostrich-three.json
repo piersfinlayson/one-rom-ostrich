@@ -1,0 +1,61 @@
+{
+    "$schema": "https://images.onerom.org/configs/schema.json",
+    "version": 1,
+    "name": "28-ostrich-three",
+    "description": "Three ROM slots, which the Ostrich plugin doesn't support",
+    "categories": [],
+    "chip_sets": [
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "Stub system plugin",
+                    "file": "images/test/stub-system-plugin.bin",
+                    "type": "system_plugin"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "Stub user plugin",
+                    "file": "images/test/stub-user-plugin.bin",
+                    "type": "user_plugin"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "27256 slot 0",
+                    "file": "images/test/rand_32KB.rom",
+                    "type": "27256"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "27256 slot 1",
+                    "file": "images/test/rand_64KB.rom",
+                    "type": "27256",
+                    "size_handling": "truncate"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "27256 slot 2",
+                    "file": "images/test/rand_512KB.rom",
+                    "type": "27256",
+                    "size_handling": "truncate"
+                }
+            ]
+        }
+    ]
+}

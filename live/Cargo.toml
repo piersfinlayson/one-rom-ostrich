@@ -1,0 +1,23 @@
+[package]
+name = "onerom-ostrich-live"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT"
+description = "Runs the Ostrich plugin's tests against a One ROM over USB"
+
+[[bin]]
+name = "ostrich-live"
+path = "src/main.rs"
+
+# build.rs reads the One ROM checkout at ../build/one-rom that the plugin's
+# make one-rom creates.
+[dependencies]
+clap = { version = "4.6", features = ["derive"] }
+nusb = "0.2.7"
+probe-rs = { version = "0.32", default-features = false, features = ["builtin-targets"] }
+serde_json = "1"
+serialport = { version = "4.9", default-features = false, features = ["usbportinfo-interface"] }
+
+# Not part of any workspace above this directory.
+[workspace]

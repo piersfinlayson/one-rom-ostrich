@@ -1,0 +1,9 @@
+{
+    "name": "ostrich",
+    "display_name": "Ostrich 2.0 ECU Tuning",
+    "description": "Ostrich 2.0 emulation and ECU datalogging over USB",
+    "author": "Piers Finlayson",
+    "source": "https://github.com/piersfinlayson/one-rom-ostrich",
+    "license": "MIT",
+    "build_output": "build/ostrich_plugin.bin"
+}

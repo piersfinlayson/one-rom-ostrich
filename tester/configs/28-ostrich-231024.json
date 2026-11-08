@@ -1,0 +1,52 @@
+{
+    "$schema": "https://images.onerom.org/configs/schema.json",
+    "version": 1,
+    "name": "28-ostrich-231024",
+    "description": "Two 128KB slots, which the Ostrich plugin doesn't support",
+    "categories": [],
+    "chip_sets": [
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "Stub system plugin",
+                    "file": "images/test/stub-system-plugin.bin",
+                    "type": "system_plugin"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "Stub user plugin",
+                    "file": "images/test/stub-user-plugin.bin",
+                    "type": "user_plugin"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "231024 slot 0",
+                    "file": "images/test/rand_128KB.rom",
+                    "type": "231024",
+                    "cs1": "active_high"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "231024 slot 1",
+                    "file": "images/test/rand_256KB.rom",
+                    "type": "231024",
+                    "cs1": "active_high",
+                    "size_handling": "truncate"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "$schema": "https://images.onerom.org/configs/schema.json",
+    "version": 1,
+    "name": "28-ostrich-2764",
+    "description": "Two 2764 slots for the Ostrich tester",
+    "categories": [],
+    "chip_sets": [
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "Stub system plugin",
+                    "file": "images/test/stub-system-plugin.bin",
+                    "type": "system_plugin"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "Stub user plugin",
+                    "file": "images/test/stub-user-plugin.bin",
+                    "type": "user_plugin"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "2764 slot 0",
+                    "file": "images/test/rand_8KB.rom",
+                    "type": "2764"
+                }
+            ]
+        },
+        {
+            "type": "single",
+            "chips": [
+                {
+                    "description": "2764 slot 1",
+                    "file": "images/test/rand_16KB.rom",
+                    "type": "2764",
+                    "size_handling": "truncate"
+                }
+            ]
+        }
+    ]
+}
